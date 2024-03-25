@@ -1,0 +1,16 @@
+/* Esto es un comentario*/
+/*Para poder agrupar caracteristicas vamos a crear clases*/
+/* .clase */
+
+.encabezado {
+  text-align: center;
+}
+
+.pieDePagina {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,51 @@
+/* Esto es un comentario*/
+/*Para poder agrupar caracteristicas vamos a crear clases*/
+/* .clase */
+
+.centrado {
+  text-align: center;
+}
+
+.encabezado {
+    text-align: center;
+  }
+  
+.pieDePagina {
+    text-align: center;
+  }
+  
+.flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+.alineamiento {
+  display: flex;
+  justify-content: space-around;
+}
+
+.caja-imagen-perro {
+  width: 18%;
+}
+
+.caja-titulo{
+  width: 90%;
+  height: 223px;
+  background-color: aquamarine; ;
+  color: salmon;
+}
+
+.caja-contacto {
+  width: 25%;  
+  background-color: aquamarine; ;
+  color: salmon;
+}
+
+.caja-experiencia{
+  width: 75%;
+}
+
+.caja-imagen-uba{
+  width: 60%;
+}
