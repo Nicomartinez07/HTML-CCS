@@ -1,0 +1,65 @@
+/* .clase */
+
+.centrado {
+    text-align: center;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+}
+
+.pieDePagina {
+    text-align: center;
+}
+
+.alineamiento-Titulo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fondoPagina {
+    background-image: url('./img/Wall-E-1-1024x576.webp');
+    background-size: cover;
+}
+
+.grilla {
+    display: grid;
+    
+    /* Forma uno  */
+    /*grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 350px 350px 350px;*/
+    /*Como generar una disposicion basica de columnas de una grilla (3 grillas en este caso)*/
+    
+    /*forma 2
+    grid-template-columns: repeat(3, 250px);
+    /*grid-template-rows: repeat(3, 350px);*/
+ 
+
+    /*Forma 3 */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.fotoDinamica {
+    width: 95%;
+    aspect-ratio: 9 / 16;/* Puede ser opcional --> le da estructura a las fotos  */
+                        /* si es widescreen o si es tipo retrato */ 
+    object-fit: cover;
+    border-radius: 30px;
+}                  
+
+.colorPeliculas {
+    background-color: salmon; ;
+    border:10px solid salmon;
+    border-radius:30px;
+
+}
+
+.alineamientoFoto {
+    display: flex;
+    flex-direction: column; /*La direccion en la que va a estar el contendio */
+    align-items: center; /* Alinea el contenido al centro*/ 
+}

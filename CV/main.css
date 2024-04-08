@@ -32,20 +32,22 @@
 .caja-titulo{
   width: 90%;
   height: 223px;
-  background-color: aquamarine; ;
-  color: salmon;
+  background-color: #D6DAC8; ;
+  color: black;
 }
 
 .caja-contacto {
   width: 25%;  
-  background-color: aquamarine; ;
-  color: salmon;
+  background-color: #9CAFAA; ;
+  color: black;
 }
 
 .caja-experiencia{
   width: 75%;
+  background-color: #FBF3D5;
 }
 
 .caja-imagen-uba{
   width: 60%;
+  background-color: #FBF3D5;
 }
