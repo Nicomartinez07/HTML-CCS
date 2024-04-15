@@ -1,0 +1,14 @@
+1- La propiedad que se utiliza para cambiar el comportamiento de los elementos del contenedor es 
+el display: flex
+
+2- La propiedad de CSS que permite definir el espacio entre elementos hijos de un contenedor es flex
+
+3- El Alaing-items se utiliza para organizar de manera vertical y con flex direction, el justify-content se utiliza solo con flex (manera horizontal)
+
+4- LA propiedad de CSS que se utiliza para cambiar el tamaño de las filas y columnas del grid son
+grid-template-columns: ; / grid-template-rows: ;
+
+5- La principal diferencia entre display: flex y display: grid es que flex es solo para una fila y 
+una columnas, en cambio el grid se puede utilizar para muchas filas y columnas
+
+6- Para alinear los elementos hijos de un contenedor utilizando CSS se necesitan 
