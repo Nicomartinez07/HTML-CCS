@@ -55,17 +55,23 @@
 
 .fotoDinamica {
     width: 95%;
-    aspect-ratio: 9 / 9;/* Puede ser opcional --> le da estructura a las fotos  */
+    aspect-ratio: 1 / 1;/* Puede ser opcional --> le da estructura a las fotos  */
                         /* si es widescreen o si es tipo retrato */ 
     object-fit: cover;
     border-radius: 30px;
-}                  
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
 
-.colorPeliculas {
-    background-color: salmon; ;
-    border:10px solid salmon;
-    border-radius:30px;
 
+.fotoDinamica:hover{
+    transform: scale(1.1);}
+
+#visibleUno{
+    z-index: 10;
+}
+#ocultaUno{
+    z-index: -10;
 }
 
 .alineamientoFoto {
