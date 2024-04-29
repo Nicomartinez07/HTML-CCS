@@ -1,66 +1,89 @@
 document.addEventListener("DOMContentLoaded", function () {
   var images = [
+    //Array de objetos (cartas de cada pokemon)
     {
-      link: "pokemones-fotos/pikachu.webp", 
+      //Cada elemento entre llaves es cada pokemon
+      name: "Pikachu",
+      link: "pokemones-fotos/pikachu.webp",
       classColor: "pikachu",
-      alt: ""
+      tipo: "Electrico",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Charmander.webp", 
+      name: "Charmander",
+      link: "pokemones-fotos/Charmander.webp",
       classColor: "charmander",
-      alt: ""
+      tipo: "Fuego",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Eevee.webp", 
+      name: "Eevee",
+      link: "pokemones-fotos/Eevee.webp",
       classColor: "eevee",
-      alt: ""
+      tipo: "Normal",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Sylveon.webp", 
+      name: "Sylveon",
+      link: "pokemones-fotos/Sylveon.webp",
       classColor: "sylveon",
-      alt: ""
+      tipo: "Hada",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Cresselia.webp", 
+      name: "Cresselia",
+      link: "pokemones-fotos/Cresselia.webp",
       classColor: "cresselia",
-      alt: ""
+      tipo: "Psiquico",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Butterfree.webp", 
+      name: "Butterfree",
+      link: "pokemones-fotos/Butterfree.webp",
       classColor: "butterfree",
-      alt: ""
+      tipo: "Bicho",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Snorlax.webp", 
+      name: "Snorlax",
+      link: "pokemones-fotos/Snorlax.webp",
       classColor: "snorlax",
-      alt: ""
+      tipo: "Normal",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Lapras.webp", 
+      name: "Lapras",
+      link: "pokemones-fotos/Lapras.webp",
       classColor: "lapras",
-      alt: ""
+      tipo: "Hielo Agua",
+      alt: "",
     },
     {
-      link: "pokemones-fotos/Oshawott.webp", 
+      name: "Oshawott",
+      link: "pokemones-fotos/Oshawott.webp",
       classColor: "oshawott",
-      alt: ""
+      tipo: "Agua",
+      alt: "",
     },
   ];
 
-  var gridContainer = document.getElementById("grid-container");
+  var gridContainer = document.getElementById("grid-container"); //Seleccionamos por id la etiqueta requerida
 
   for (var i = 0; i < 9; i++) {
-    var gridItem = document.createElement("div");
-    gridItem.classList.add(`alineamientoFoto ${images[i].classColor}`);
-    var h1 = document.createElement("h1")
-    gridItem.classList.add('centrado');
+    var gridItem = document.createElement("div"); //
+    gridItem.classList.add("alineamientoFoto", images[i].classColor); // En la posicion i de images agregamos la propiedad classColor
+    var h2 = document.createElement("h2"); //Crea el item entre ()
+    h2.textContent = images[i].name; //  Asigna el valor del texto
+    gridItem.appendChild(h2); // Agrega al elemento hijo al padre(grilla) la etiqueta con el valor correspondiente
+    gridItem.classList.add("centrado"); // Le agrega una clase al item
     var image = document.createElement("img");
-    image.src = images[i];
-    image.classList.add("fotoDinamica")
-    image.alt.add("fotoGrilla")
-    var h3 = document.createElement("h3")
-    gridItem.classList.add('centrado');
+    image.src = images[i].link;
+    image.classList.add("fotoDinamica");
     gridItem.appendChild(image);
     gridContainer.appendChild(gridItem);
+    var h3 = document.createElement("h3");
+    h3.textContent = images[i].tipo;
+    gridItem.appendChild(h3);
+    gridItem.classList.add("centrado");
   }
 });

@@ -1,0 +1,40 @@
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.rojo {
+  background-color: red;
+  border: 10px solid red;
+  border-radius: 30px;
+}
+
+.naranja {
+  background-color: orange;
+  border: 10px solid orange;
+  border-radius: 30px;
+}
+
+.amarillo {
+  background-color: yellow;
+  border: 10px solid yellow;
+  border-radius: 30px;
+}
+
+.verde {
+  background-color: green;
+  border: 10px solid green;
+  border-radius: 30px;
+}
+
+.azul {
+  background-color: rgb(2, 64, 197);
+  border: 10px solid rgb(2, 64, 197);
+  border-radius: 30px;
+}
+
+.violeta {
+  background-color: rgb(199, 12, 199);
+  border: 10px solid rgb(199, 12, 199);
+  border-radius: 30px;
+}

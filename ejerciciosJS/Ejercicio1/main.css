@@ -1,0 +1,27 @@
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.amarillo {
+  background-color: #ffc600;
+  border: 10px solid #ffc600;
+  border-radius: 30px;
+}
+
+.azul {
+  background-color: #1047ef;
+  border: 10px solid #1047ef;
+  border-radius: 30px;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h1 {
+  font-size: 0em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

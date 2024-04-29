@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link href="main.css" rel="stylesheet" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="centrado rojo">Calculadora de sumas</h1>
+      <div class="centrado naranja">
+        <label for="number1">Numero 1</label>
+        <input id="number1" placeholder="numero1" />
+      </div>
+      <p class="centrado amarillo">+</p>
+      <div class="centrado verde">
+        <label for="number2">Numero 2</label>
+        <input id="number2" placeholder="numero2" />
+      </div>
+      <p class="centrado azul">Resultado: <span id="number"></span></p>
+      <div class="centrado violeta">
+        <button onclick="sumarNumeros()">Calcular</button>
+      </div>
+    </main>
+  </body>
+</html>
