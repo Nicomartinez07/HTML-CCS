@@ -13,5 +13,4 @@ function agregarElemento() {
   elementoLista.onclick = function () {
     lista.removeChild(elementoLista);
   };
-  //
 }
